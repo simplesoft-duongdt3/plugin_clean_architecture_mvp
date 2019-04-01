@@ -11,16 +11,13 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
-    <idea-version since-build="171"/>
-    <depends>com.intellij.modules.lang</depends>
-    <depends>org.jetbrains.android</depends>
-    <extensions defaultExtensionNs="com.intellij">
-        <defaultProjectTypeProvider type="Android"/>
-    </extensions>
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="181"/>
 
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products -->
+    <depends>com.intellij.modules.lang</depends>
     <actions>
         <action id="CleanMVP.CreatePresentationFiles" class="action.CleanArchitecturePresentationGeneratorAction" text="Create Clean MVP Presentation files"
                 description="Create Clean Architecture Presentation files">
