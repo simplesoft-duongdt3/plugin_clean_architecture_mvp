@@ -1,5 +1,5 @@
 # plugin_clean_architecture_mvp
-Plugin Clean Architecture Mvp
+Plugin Clean Architecture Mvp (duongdt3)
 
 Feature:
 + ~~Create presentation template files (Contract, Presenter, PresentationModel)~~
