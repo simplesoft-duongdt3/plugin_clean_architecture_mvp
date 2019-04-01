@@ -1,0 +1,14 @@
+package ${PACKAGE_NAME};
+
+import io.reactivex.Single
+
+class ${USE_CASE_NAME}UseCase(useCaseExecution: UseCaseExecution) : UseCase<${USE_CASE_NAME}UseCaseInputModel, ${USE_CASE_NAME}UseCaseSuccessModel, ${USE_CASE_NAME}UseCaseFailModel>(useCaseExecution = useCaseExecution) {
+    override fun buildUseCaseObservable(input: ${USE_CASE_NAME}UseCaseInputModel): Single<${USE_CASE_NAME}UseCaseSuccessModel> {
+        //TODO buildUseCaseObservable
+    }
+
+    override fun createFailOutput(throwable: Throwable): ${USE_CASE_NAME}UseCaseFailModel {
+        //TODO createFailOutput
+    }
+
+}

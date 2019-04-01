@@ -1,0 +1,11 @@
+package ${PACKAGE_NAME};
+
+class ${FEATURE_NAME}Contract {
+    abstract class Presenter : MvpPresenter<View>() {
+
+    }
+
+    interface View : MvpView {
+
+    }
+}

@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>tinyappsteam.cleanarchitecture_mvp</id>
+    <name>Clean Architecture MVP</name>
+    <vendor email="tinyappsteam@gmail.com" url="http://www.yourcompany.com">TinyAppsTeam</vendor>
+
+    <description><![CDATA[
+    Generator for Clean Architecture MVP.
+    + Support Presentation layer
+    + Support Domain layer
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <idea-version since-build="171"/>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.android</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultProjectTypeProvider type="Android"/>
+    </extensions>
+
+    <actions>
+        <action id="CleanMVP.CreatePresentationFiles" class="action.CleanArchitecturePresentationGeneratorAction" text="Create Clean MVP Presentation files"
+                description="Create Clean Architecture Presentation files">
+            <add-to-group  group-id="NewGroup" anchor="after" relative-to-action="NewFile"/>
+        </action>
+        <action id="CleanMVP.CreateDomainFiles" class="action.CleanArchitectureDomainGeneratorAction" text="Create Clean MVP Domain files"
+                description="Create Clean Architecture Domain files">
+            <add-to-group  group-id="NewGroup" anchor="after" relative-to-action="CleanMVP.CreatePresentationFiles"/>
+        </action>
+    </actions>
+</idea-plugin>

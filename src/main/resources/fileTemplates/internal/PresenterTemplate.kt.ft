@@ -1,0 +1,5 @@
+package ${PACKAGE_NAME};
+
+class ${FEATURE_NAME}Presenter: ${FEATURE_NAME}Contract.Presenter() {
+
+}
