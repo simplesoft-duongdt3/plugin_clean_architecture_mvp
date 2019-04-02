@@ -27,5 +27,9 @@
                 description="Create Clean Architecture Domain files">
             <add-to-group  group-id="NewGroup" anchor="after" relative-to-action="CleanMVP.CreatePresentationFiles"/>
         </action>
+        <action id="CleanMVP.CreateEventFiles" class="action.CleanArchitectureEventGeneratorAction" text="Create Clean MVP Event files"
+                description="Create Clean Architecture Event files">
+            <add-to-group  group-id="NewGroup" anchor="after" relative-to-action="CleanMVP.CreateDomainFiles"/>
+        </action>
     </actions>
 </idea-plugin>

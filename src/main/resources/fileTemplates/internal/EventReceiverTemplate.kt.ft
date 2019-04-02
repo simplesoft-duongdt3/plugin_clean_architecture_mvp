@@ -1,0 +1,12 @@
+package ${PACKAGE_NAME};
+
+class ${EVENT_NAME}EventReceiverImpl: ${EVENT_NAME}Event.Receiver {
+    override fun setEventListener(consumer: (${EVENT_NAME}Event.Data) -> Unit) {
+        KBus.unsubscribe(this)
+        KBus.subscribe(this, consumer)
+    }
+
+    override fun stopReceive() {
+        KBus.unsubscribe(this)
+    }
+}

@@ -1,0 +1,14 @@
+package ${PACKAGE_NAME};
+
+interface ${EVENT_NAME}Event {
+    interface Receiver {
+        fun setEventListener(consumer: (Data) -> Unit)
+        fun stopReceive()
+    }
+
+    interface Sender {
+        fun sendEvent(eventData: Data)
+    }
+
+    class Data
+}
