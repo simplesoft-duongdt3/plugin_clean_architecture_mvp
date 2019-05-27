@@ -1,4 +1,8 @@
-package ${PACKAGE_NAME};
+package ${PACKAGE_NAME}
+
+import com.duongdt3.domain.common.usecase.model.UseCaseFailModel
+import com.duongdt3.presentation_mvp.common.MvpPresenter
+import com.duongdt3.presentation_mvp.common.MvpView
 
 class ${FEATURE_NAME}Contract {
     abstract class Presenter : MvpPresenter<View>() {

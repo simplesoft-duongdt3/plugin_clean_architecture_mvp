@@ -1,14 +1,18 @@
-package ${PACKAGE_NAME};
-
+package ${PACKAGE_NAME}
+import com.duongdt3.domain.common.usecase.model.UseCaseFailModel
+import com.duongdt3.domain.common.usecase.single.UseCase
+import com.duongdt3.domain.common.usecase.single.UseCaseCommonFailModelFactory
+import com.duongdt3.domain.common.usecase.single.UseCaseExecution
 import io.reactivex.Single
 
-class ${USE_CASE_NAME}UseCase(useCaseExecution: UseCaseExecution) : UseCase<${USE_CASE_NAME}UseCaseInputModel, ${USE_CASE_NAME}UseCaseSuccessModel, ${USE_CASE_NAME}UseCaseFailModel>(useCaseExecution = useCaseExecution) {
-    override fun buildUseCaseObservable(input: ${USE_CASE_NAME}UseCaseInputModel): Single<${USE_CASE_NAME}UseCaseSuccessModel> {
+class ${USE_CASE_NAME}GetDemoBookUseCase(useCaseExecution: UseCaseExecution, useCaseCommonFailModelFactory: UseCaseCommonFailModelFactory)
+: UseCase<${USE_CASE_NAME}InputModel, ${USE_CASE_NAME}UseCaseSuccessModel>(
+        useCaseExecution,
+        useCaseCommonFailModelFactory
+) {
+    override fun buildUseCaseObservable(input: ${USE_CASE_NAME}UseCaseInputModel): Single<${USE_CASE_NAME}SuccessModel> {
         //TODO buildUseCaseObservable
     }
 
-    override fun createFailOutput(throwable: Throwable): ${USE_CASE_NAME}UseCaseFailModel {
-        //TODO createFailOutput
-    }
-
+    override fun createFeatureFailOutput(throwable: Throwable): UseCaseFailModel.FeatureFail? = null
 }

@@ -40,7 +40,7 @@ class CleanArchitectureDomainGeneratorAction : AnAction() {
             createUseCaseFile(useCaseNameAfterTrim, fileCreator, destinationPath)
             createUseCaseInputModelFile(useCaseNameAfterTrim, fileCreator, destinationPath)
             createUseCaseSuccessModelFile(useCaseNameAfterTrim, fileCreator, destinationPath)
-            createUseCaseFailModelFile(useCaseNameAfterTrim, fileCreator, destinationPath)
+            //createUseCaseFailModelFile(useCaseNameAfterTrim, fileCreator, destinationPath)
             //TODO: open file after create
             //FileEditorManager.getInstance(project).openFile(createTemplateFile, true)
         }
