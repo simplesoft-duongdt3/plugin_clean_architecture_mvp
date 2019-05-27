@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>tinyappsteam.cleanarchitecture_mvp</id>
     <name>Clean Architecture MVP</name>
-    <vendor email="tinyappsteam@gmail.com" url="http://www.yourcompany.com">TinyAppsTeam</vendor>
+    <vendor email="tinyappsteam@gmail.com" url="https://github.com/simplesoft-duongdt3/plugin_clean_architecture_mvp">TinyAppsTeam</vendor>
 
     <description><![CDATA[
     Generator for Clean Architecture MVP.

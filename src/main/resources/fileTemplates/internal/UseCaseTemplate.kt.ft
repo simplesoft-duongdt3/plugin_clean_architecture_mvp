@@ -6,11 +6,11 @@ import com.duongdt3.domain.common.usecase.single.UseCaseExecution
 import io.reactivex.Single
 
 class ${USE_CASE_NAME}GetDemoBookUseCase(useCaseExecution: UseCaseExecution, useCaseCommonFailModelFactory: UseCaseCommonFailModelFactory)
-: UseCase<${USE_CASE_NAME}InputModel, ${USE_CASE_NAME}UseCaseSuccessModel>(
+: UseCase<${USE_CASE_NAME}UseCaseInputModel, ${USE_CASE_NAME}UseCaseSuccessModel>(
         useCaseExecution,
         useCaseCommonFailModelFactory
 ) {
-    override fun buildUseCaseObservable(input: ${USE_CASE_NAME}UseCaseInputModel): Single<${USE_CASE_NAME}SuccessModel> {
+    override fun buildUseCaseObservable(input: ${USE_CASE_NAME}UseCaseInputModel): Single<${USE_CASE_NAME}UseCaseSuccessModel> {
         //TODO buildUseCaseObservable
     }
 

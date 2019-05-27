@@ -8,7 +8,7 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'kotlin'
 
 group 'tinyappsteam'
-version '1.0.1'
+version '1.0.3'
 
 sourceCompatibility = 1.8
 
@@ -22,7 +22,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2018.2'
+    version '2018.3.4'
     pluginName 'Clean Architecture MVP'
     plugins 'kotlin'
     plugins 'android'
